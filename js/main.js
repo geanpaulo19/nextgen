@@ -128,21 +128,23 @@ window.addEventListener('load', function () {
   var pfill  = document.getElementById('hpfill');
   var slides = document.querySelectorAll('.hslide');
 
-  function getMaxScroll() {
-    return (slides[0].offsetWidth + 24) * (slides.length - 1);
-  }
-
-  ScrollTrigger.create({
-    trigger: '#hpin',
-    start: 'top top',
-    end: function () { return '+=' + (getMaxScroll() + window.innerWidth * 0.4); },
-    pin: '#hsticky',
-    scrub: 1,
-    onUpdate: function (self) {
-      gsap.set(track, { x: -getMaxScroll() * self.progress });
-      pfill.style.width = (self.progress * 100) + '%';
+  if (window.innerWidth > 768) {
+    function getMaxScroll() {
+      return (slides[0].offsetWidth + 24) * (slides.length - 1);
     }
-  });
+
+    ScrollTrigger.create({
+      trigger: '#hpin',
+      start: 'top top',
+      end: function () { return '+=' + (getMaxScroll() + window.innerWidth * 0.4); },
+      pin: '#hsticky',
+      scrub: 1,
+      onUpdate: function (self) {
+        gsap.set(track, { x: -getMaxScroll() * self.progress });
+        pfill.style.width = (self.progress * 100) + '%';
+      }
+    });
+  }
 
   /* ── NUMBER COUNTERS ────────────────────────────────────── */
   document.querySelectorAll('.num-big[data-target]').forEach(function (el) {
