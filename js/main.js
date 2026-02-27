@@ -128,11 +128,11 @@ window.addEventListener('load', function () {
   var pfill  = document.getElementById('hpfill');
   var slides = document.querySelectorAll('.hslide');
 
-  if (window.innerWidth > 768) {
-    function getMaxScroll() {
-      return (slides[0].offsetWidth + 24) * (slides.length - 1);
-    }
+  function getMaxScroll() {
+    return (slides[0].offsetWidth + 24) * (slides.length - 1);
+  }
 
+  if (window.innerWidth > 768) {
     ScrollTrigger.create({
       trigger: '#hpin',
       start: 'top top',
