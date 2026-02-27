@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gean Paulo &mdash; Web Designer &amp; Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- GSAP (synchronous, no defer — must be ready before main.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="cur"></div>
+  <div id="cur-f"></div>
+  <div id="prog"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-words">
+      <span class="w" id="lw1">GEAN</span>
+      <span class="w" id="lw2">PAULO</span>
+    </div>
+    <div class="lbar-wrap"><div class="lbar-fill" id="lbar"></div></div>
+    <div class="lnum" id="lnum">0%</div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">GP</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gridlines"></div>
+    <div class="scroll-hint" id="scrollHint"><div class="sh-line"></div>Scroll</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="eyebrow">Web Designer &amp; Front-End Developer &mdash; Philippines</div>
+      <div class="hero-h1">
+        <span class="hline"><span class="hword" id="hw1">GEAN</span></span>
+        <span class="hline"><span class="hword" id="hw2">PAULO</span></span>
+      </div>
+      <div class="hero-bottom" id="heroBot">
+        <p class="hero-desc">Building digital experiences that feel alive &mdash; with motion, craft, and relentless attention to detail.</p>
+        <a href="#works" class="hero-cta">See My Work &#8599;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="a-label">[ About Me ]</div>
+        <h2 class="a-h2">Design.<br /><em>Code.</em><br />Detail.</h2>
+      </div>
+      <div class="fade-up">
+        <p class="a-para">I&#39;m <strong>Gean Paulo</strong>, a web designer and front-end developer based in the <strong>Philippines</strong>. I bridge the gap between design aesthetics and engineering &mdash; building sites that are fast, accessible, and purposeful.</p>
+        <p class="a-para">From <strong>pixel-perfect WordPress builds</strong> to <strong>custom JavaScript apps</strong>, I take projects from concept to live &mdash; sweating every detail so you don&#39;t have to.</p>
+        <div class="chips">
+          <span class="chip">HTML / CSS</span><span class="chip">JavaScript</span>
+          <span class="chip">WordPress</span><span class="chip">Elementor</span>
+          <span class="chip">GSAP</span><span class="chip">PHP</span>
+          <span class="chip">Figma</span><span class="chip">WooCommerce</span>
+          <span class="chip">SEO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+    <div class="sec-head fade-up">
+      <h2>Selected<br />Work</h2>
+      <span class="sec-note">6 Projects &#8595;</span>
+    </div>
+    <div class="works-list">
+      <a href="#" class="wrow"><span class="wr-num">01</span><span class="wr-name">Brand Identity &amp; Web Presence</span><span class="wr-tags"><span class="wr-tag">Web Design</span><span class="wr-tag">Branding</span></span><span class="wr-year">2024</span><span class="wr-arr">&#8599;</span></a>
+      <a href="#" class="wrow"><span class="wr-num">02</span><span class="wr-name">SaaS Product Launch</span><span class="wr-tags"><span class="wr-tag">UI/UX</span><span class="wr-tag">Landing Page</span></span><span class="wr-year">2024</span><span class="wr-arr">&#8599;</span></a>
+      <a href="#" class="wrow"><span class="wr-num">03</span><span class="wr-name">E-Commerce Store Redesign</span><span class="wr-tags"><span class="wr-tag">WooCommerce</span><span class="wr-tag">UX</span></span><span class="wr-year">2025</span><span class="wr-arr">&#8599;</span></a>
+      <a href="#" class="wrow"><span class="wr-num">04</span><span class="wr-name">Interactive Web Application</span><span class="wr-tags"><span class="wr-tag">JavaScript</span><span class="wr-tag">Web App</span></span><span class="wr-year">2025</span><span class="wr-arr">&#8599;</span></a>
+      <a href="#" class="wrow"><span class="wr-num">05</span><span class="wr-name">Creative Director Portfolio</span><span class="wr-tags"><span class="wr-tag">Portfolio</span><span class="wr-tag">GSAP</span></span><span class="wr-year">2025</span><span class="wr-arr">&#8599;</span></a>
+      <a href="#" class="wrow"><span class="wr-num">06</span><span class="wr-name">Corporate Website Rebuild</span><span class="wr-tags"><span class="wr-tag">Corporate</span><span class="wr-tag">SEO</span></span><span class="wr-year">2026</span><span class="wr-arr">&#8599;</span></a>
+    </div>
+  </section>
+
+  <!-- HORIZONTAL SCROLL PIN -->
+  <div id="hpin">
+    <div class="hsticky" id="hsticky">
+      <span class="hpin-label">Scroll to explore &#8594;</span>
+      <div class="htrack" id="htrack">
+        <div class="hslide"><div class="hslide-bg" style="background:linear-gradient(140deg,#0d0014,#2a0050)"></div><div class="hslide-n">01</div><div class="hslide-cat">Design</div><div class="hslide-title">UI / UX Design</div><div class="hslide-desc">User-centered interfaces from wireframes to high-fidelity prototypes that feel effortless.</div></div>
+        <div class="hslide"><div class="hslide-bg" style="background:linear-gradient(140deg,#001420,#003a5a)"></div><div class="hslide-n">02</div><div class="hslide-cat">Development</div><div class="hslide-title">Front-End Dev</div><div class="hslide-desc">Clean, semantic HTML/CSS/JS &mdash; no bloat, just fast and maintainable code built to last.</div></div>
+        <div class="hslide"><div class="hslide-bg" style="background:linear-gradient(140deg,#100800,#3a1800)"></div><div class="hslide-n">03</div><div class="hslide-cat">CMS</div><div class="hslide-title">WordPress &amp; Elementor</div><div class="hslide-desc">Custom themes, WooCommerce stores, and Elementor builds done right.</div></div>
+        <div class="hslide"><div class="hslide-bg" style="background:linear-gradient(140deg,#060014,#200050)"></div><div class="hslide-n">04</div><div class="hslide-cat">Animation</div><div class="hslide-title">Motion &amp; GSAP</div><div class="hslide-desc">Scroll-driven animations and micro-interactions that bring every page to life.</div></div>
+        <div class="hslide"><div class="hslide-bg" style="background:linear-gradient(140deg,#040d04,#0d2e0d)"></div><div class="hslide-n">05</div><div class="hslide-cat">Performance</div><div class="hslide-title">Speed &amp; SEO</div><div class="hslide-desc">Core Web Vitals optimization and technical SEO so your site ranks high and loads fast.</div></div>
+      </div>
+      <div class="hprog-bar"><div class="hprog-fill" id="hpfill"></div></div>
+    </div>
+  </div>
+
+  <!-- NUMBERS -->
+  <section id="numbers">
+    <div class="nums-grid">
+      <div class="num-item fade-up"><div class="num-big" data-target="50">0</div><div class="num-lbl">Projects Delivered</div></div>
+      <div class="num-item fade-up"><div class="num-big" data-target="5">0</div><div class="num-lbl">Years Experience</div></div>
+      <div class="num-item fade-up"><div class="num-big" data-target="30">0</div><div class="num-lbl">Happy Clients</div></div>
+      <div class="num-item fade-up"><div class="num-big" data-target="100">0</div><div class="num-lbl">% Satisfaction</div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="svc-header">
+      <div class="svc-header-left">
+        <div class="svc-eyebrow">[ What I Offer ]</div>
+        <h2>Services<br />that <em>work.</em></h2>
+      </div>
+      <div class="svc-header-right">Every service is tailored to your goals &mdash; no templates, no shortcuts. Just quality work delivered with intention and care.</div>
+    </div>
+    <div class="svc-list">
+      <div class="svc-item fade-up"><div class="svc-n">01</div><div class="svc-title">UI / UX Design</div><div class="svc-desc">User-centered interface design from wireframes to polished high-fidelity prototypes, backed by real research and tested flows.</div><div class="svc-ic">&#11041;</div></div>
+      <div class="svc-item fade-up"><div class="svc-n">02</div><div class="svc-title">Front-End Development</div><div class="svc-desc">Semantic, performant HTML/CSS/JS &mdash; clean code, fast load times, zero bloat, and fully maintainable.</div><div class="svc-ic">&#9678;</div></div>
+      <div class="svc-item fade-up"><div class="svc-n">03</div><div class="svc-title">WordPress &amp; Elementor</div><div class="svc-desc">Custom WordPress themes and Elementor Pro pages &mdash; from simple landing pages to full WooCommerce stores.</div><div class="svc-ic">&#11033;</div></div>
+      <div class="svc-item fade-up"><div class="svc-n">04</div><div class="svc-title">Motion &amp; Animation</div><div class="svc-desc">GSAP scroll animations, hover effects, and page transitions that make every interaction feel cinematic.</div><div class="svc-ic">&#9723;</div></div>
+      <div class="svc-item fade-up"><div class="svc-n">05</div><div class="svc-title">Responsive Design</div><div class="svc-desc">Mobile-first layouts that look and work perfectly across every device &mdash; from 320px phones to 4K monitors.</div><div class="svc-ic">&#9651;</div></div>
+      <div class="svc-item fade-up"><div class="svc-n">06</div><div class="svc-title">Performance &amp; SEO</div><div class="svc-desc">Core Web Vitals, speed optimization, and technical SEO so your site ranks higher and loads faster.</div><div class="svc-ic">&#9670;</div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testi">
+    <div class="sec-head fade-up">
+      <h2>Client<br />Words.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="t-card fade-up"><span class="t-bigquote">&ldquo;</span><p class="t-q">Gean completely transformed our online presence. Animations were buttery smooth and conversions jumped 40% in the first month.</p><div class="t-bar"></div><div class="t-name">James M.</div><div class="t-role">CEO, Tech Startup</div></div>
+      <div class="t-card fade-up"><span class="t-bigquote">&ldquo;</span><p class="t-q">From discovery to launch it was seamless. He understood our brand instantly and built something we&#39;re genuinely proud to show off.</p><div class="t-bar"></div><div class="t-name">Sofia A.</div><div class="t-role">Brand Director, Agency</div></div>
+      <div class="t-card fade-up"><span class="t-bigquote">&ldquo;</span><p class="t-q">He rebuilt our WordPress site from scratch &mdash; 3 seconds faster, stunning on mobile, and our whole team can finally manage it.</p><div class="t-bar"></div><div class="t-name">Rico D.</div><div class="t-role">Founder, E-Commerce Brand</div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="ct-bg">CONTACT</div>
+    <div class="ct-grid">
+      <div class="fade-up">
+        <h2 class="ct-h">Let&#39;s<br /><span>Build</span><br />Together.</h2>
+        <p class="ct-p">Got a project in mind? I&#39;m currently available for freelance work. Let&#39;s create something worth talking about.</p>
+      </div>
+      <div class="ct-right fade-up">
+        <a href="mailto:hello@geanpaulo.com" class="ct-email">hello@geanpaulo.com <span class="ct-arrow">&#8599;</span></a>
+        <div class="socials">
+          <a href="#" class="soc">GitHub &#8599;</a>
+          <a href="#" class="soc">LinkedIn &#8599;</a>
+          <a href="#" class="soc">Dribbble &#8599;</a>
+          <a href="#" class="soc">X / Twitter &#8599;</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <p>&copy; 2026 Gean Paulo. All rights reserved.</p>
+      <p>Designed &amp; built in the Philippines &#127477;&#127469;</p>
+    </div>
+  </section>
+
+  <script src="js/works.js"></script>
+
+  <!-- Main JS (after DOM, but also wrapped in window load inside file) -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
